@@ -1,3 +1,55 @@
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/Source.lua')))()
+	local function Notify(name, content, image, time)
+		OrionLib:MakeNotification({
+			Name = name,
+			Content = content,
+			Image = image,
+			Time = time
+		})
+	end
+	
+	-- Toggle UI Lib
+	cht = game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
+	if msg:sub(1, 7) == ".toggle" then
+		getfenv().keytoclick = "RightShift"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end
+	end)
+	
+	-- Role Table
+	local RolesTable = {
+		"The Guest",
+		"The Hungry",
+		"The Hyper",
+		"The Medic",
+		"The Police",
+		"The Protector",
+		"The Stealthy",
+		"The Swat"
+		
+	}
+	
+	local function GetRole(Role)
+		if Role == "The Guest" then
+			Events1:WaitForChild("MakeRole"):FireServer("LinkedSword", getgenv().UseSkin)
+		elseif Role == "The Hungry" then
+			Events1:WaitForChild("MakeRole"):FireServer("Chips", getgenv().SkinType, getgenv().UseSkin)
+		elseif Role == "The Hyper" then
+			Events1:WaitForChild("OutsideRole"):FireServer("Lollipop", getgenv().UseSkin)
+		elseif Role == "The Medic" then
+			Events1:WaitForChild("MakeRole"):FireServer("MedKit", getgenv().SkinType, getgenv().UseSkin)
+		elseif Role == "The Police" then
+			Events1:WaitForChild("OutsideRole"):FireServer("Gun", getgenv().UseSkin)
+		elseif Role == "The Protector" then
+			Events1:WaitForChild("OutsideRole"):FireServer("Bat", getgenv().SkinType, getgenv().UseSkin)
+		elseif Role == "The Stealthy" then
+			Events1:WaitForChild("MakeRole"):FireServer("TeddyBloxpin", getgenv().SkinType, getgenv().UseSkin)
+		elseif Role == "The Swat" then
+			Events1:WaitForChild("OutsideRole"):FireServer("SwatGun", getgenv().UseSkin)
+		end
+	end
+	
 	local Window = OrionLib:MakeWindow({
 		Name = "Toggle",
 		HidePremium = false,
