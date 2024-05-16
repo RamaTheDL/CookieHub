@@ -8,6 +8,10 @@
 		})
 	end
 	
+	-- Locals
+	getgenv().UseSkin = false
+	getgenv().SkinType = false -- true = bocil
+	
 	-- Toggle UI Lib
 	cht = game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
 	if msg:sub(1, 7) == ".toggle" then
