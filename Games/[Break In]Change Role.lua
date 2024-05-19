@@ -9,6 +9,8 @@
 	end
 	
 	-- Locals
+	local Events1 = game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents")
+	local LocalPlayer = game:GetService("Players").LocalPlayer
 	getgenv().UseSkin = false
 	getgenv().SkinType = false -- true = bocil
 	
