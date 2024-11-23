@@ -82,6 +82,7 @@ local Window = OrionLib:MakeWindow({
 	IntroText = "Loading Script...",
 	IntroIcon = "rbxassetid://7733989869"
 })
+--[[
 local Tab = Window:MakeTab({
 	Name = "Get Items",
 	Icon = "rbxassetid://7743869612",
@@ -429,7 +430,7 @@ Tab:AddButton({
 		end
 	end    
 })
-
+]]
 local Tab = Window:MakeTab({
 	Name = "Humanoid",
 	Icon = "rbxassetid://7733916988",
