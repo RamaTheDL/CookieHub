@@ -809,8 +809,9 @@ Tab:AddToggle({
 		end
 	end    
 })
+Notify('Notification!', "Author: Rama102031", 'rbxassetid://7733911828', 5)
+wait(1)
 Notify('Loaded!', "Script Successfully Loaded!", 'rbxassetid://7733911828', 5)
-
 OrionLib:AddToggleButton()
 OrionLib:Init()
 --[[
