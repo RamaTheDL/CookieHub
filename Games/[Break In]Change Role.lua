@@ -48,7 +48,7 @@
 	end
 	
 	local Window = OrionLib:MakeWindow({
-		Name = "Toggle",
+		Name = "Lobby",
 		HidePremium = false,
 		SaveConfig = false,
 		ConfigFolder = "OrionTest",
@@ -105,8 +105,8 @@
 			print("Maintance..")
 		end
 	})
+	Notify('Notification!', "Author: Rama102031", 'rbxassetid://7733911828', 5)
+	wait(1)
 	Notify('Loaded!', "Script Successfully Loaded!", 'rbxassetid://7733911828', 4)
-	wait(4.2)
-	Notify('Notification!', 'Type ".toggle" to hide/show the Gui', 'rbxassetid://7733911828', 7)
 	OrionLib:AddToggleButton()
         OrionLib:Init()
