@@ -3,7 +3,7 @@
   <h3 align="center"> × CookieHub </h3>
 
   <p align="center">
-    CookieHub is a universal script that made by me.
+    CookieHub is a universal script that allows you to use a variety of different scripts found in CookieHub.
     <br/>
     <br/>
     <a href="https://github.com/RamaTheDL/CookieHub/issues">Report a Bug</a>
