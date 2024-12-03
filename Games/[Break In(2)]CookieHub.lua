@@ -454,7 +454,7 @@ else
 		})
 	end
 	local Window = OrionLib:MakeWindow({
-		Name = "Break In(2) - Story",
+		Name = "Story",
 		HidePremium = false,
 		SaveConfig = false,
 		ConfigFolder = "OrionTest",
@@ -475,7 +475,7 @@ else
 		Name = "Nuke The Server",
 		Callback = function()
 			local Players = game:GetService("Players")
-			game:GetService("ReplicatedStorage").Events.PagesReplicate:FireServer(5, "A NUKE HAS BEEN SENT!!")
+			game:GetService("ReplicatedStorage").Events.PagesReplicate:FireServer(5, LocalPlayer.Name .."Has Been Sent A NUKE!")
 			wait(5)
 			game:GetService("ReplicatedStorage").Events.HitReplicate:FireServer(1, "rbxassetid://165969964", 1)
 			wait(0.24)
