@@ -13,16 +13,7 @@
 	local LocalPlayer = game:GetService("Players").LocalPlayer
 	getgenv().UseSkin = false
 	getgenv().SkinType = false -- true = bocil
-	
-	-- Toggle UI Lib
-	cht = game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
-	if msg:sub(1, 7) == ".toggle" then
-		getfenv().keytoclick = "RightShift"
-		local vim = game:service("VirtualInputManager")
-		vim:SendKeyEvent(true, keytoclick, false, game)
-	end
-	end)
-	
+		
 	-- Role Table
 	local RolesTable = {
 		"The Guest",
@@ -117,4 +108,5 @@
 	Notify('Loaded!', "Script Successfully Loaded!", 'rbxassetid://7733911828', 4)
 	wait(4.2)
 	Notify('Notification!', 'Type ".toggle" to hide/show the Gui', 'rbxassetid://7733911828', 7)
-	OrionLib:Init()
+	OrionLib:AddToggleButton()
+        OrionLib:Init()
