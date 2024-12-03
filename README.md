@@ -44,6 +44,6 @@ Or any executors that support the following functions:
 ## Features (WIP)
 
 ## Contributors
-* **[RamaTheDL](https://github.com/RamaTheDL)**, Making codes.
-* **LiamIsMyName**, for testing, reporting bugs, and giving me some solutions.
-* **ChineseGuyFromOhio**, for testing script.
+* **[RamaTheDL](https://github.com/RamaTheDL)**, Creator/Owner.
+* **LiamIsMyName**, Tester, reporting bugs, and giving me some solutions.
+* **ChineseGuyFromOhio**, Making the Code.
